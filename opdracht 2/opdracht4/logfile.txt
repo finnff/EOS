@@ -1,0 +1,7 @@
+FAILED, g++, checkStatus.sh
+FAILED, g++, LOGFILE
+FAILED, g++, logfile.txt
+FAILED, g++, test (copy 1).pdf
+FAILED, g++, test (copy 2).pdf
+FAILED, g++, test (copy 3).pdf
+FAILED, g++, test.pdf
