@@ -13,17 +13,26 @@
 
 std::string translate(std::string input, std::string variabele)
 { std::string result = ""; 
-    
 
-
-
-  return result; }
+  //Pig Latin met aanpasbaare variabele.
+  if (input[0] == 'a' || input[0] == 'e' || input[0] == 'i' || input[0] == 'o' || input[0] == 'u' || 
+      input[0] == 'A' || input[0] == 'E' || input[0] == 'I' || input[0] == 'O' || input[0] == 'U'){
+    result.append(input);
+    result.append("w");
+    result.append(variabele);
+  }
+  else{
+    result.append(input);
+    result.append(variabele);
+  }
+  
+  return result; } 
 
 int main(int argc, char *argv[])
 { std::string s;
 
   if(argc != 2)
-  { std::cerr << "Deze functie heeft exact 1 argument nodig";
+  { std::cerr << "Deze functie heeft 1 argument nodig"<< std::endl;
     return -1; }
 
   while(true)
